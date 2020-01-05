@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/root_view"
+    android:background="@color/black"
+    >
+    <RelativeLayout
+        android:id="@+id/rout_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lout_pulish_showlist"
+        >
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/head_148"
+            android:layout_height="@dimen/head_148"
+            android:src="@mipmap/bg_findfriends"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21px"
+            />
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lout_pulish_showlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:layout_marginBottom="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4px"
+            >
+            <Button
+                android:id="@+id/btn_publisfriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_publish_selector"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5px"
+                android:layout_marginLeft="2px"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4px"
+            >
+            <ImageView
+                android:id="@+id/iv_redpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/iv_redpoint"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_showlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_show_selector"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="3px"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/black"
+        >
+        <ImageView
+            android:id="@+id/iv_gress"
+            android:layout_width="@dimen/head_148"
+            android:layout_height="@dimen/head_148"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_loadingd_data"
+            android:textSize="@dimen/textsize_30"
+            android:textColor="@color/white"
+            android:layout_below="@+id/iv_gress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            />
+    </RelativeLayout>
+</RelativeLayout>

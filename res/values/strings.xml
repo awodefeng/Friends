@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">XunFriends</string>
+    <string name="recording">请长按录音</string>
+    <string name="publisfriends">正在发布朋友圈</string>
+
+    <string name="no_network">无网络连接</string>
+    <string name="publis_friends">暂无数据，先发个朋友圈吧！</string>
+    <string name="say_something">说点什么吧</string>
+    <string name="long_press_recording">长按录音</string>
+    <string name="dont_repeat_praise">请不要重复点赞</string>
+
+    <string name="main_data_fail">同步消息，请稍等..</string>
+    <string name="main_loadingd_data">加载数据..</string>
+    <string name="loaction_get">请稍等，正在获取地理位置。</string>
+    <string name="data_error">数据加载失败，请重新进入</string>
+    <string name="last_data">已经是最后一条数据</string>
+    <string name="frieds_baby">小宝贝</string>
+    <string name="picture">相册</string>
+    <string name="takepicture">拍照</string>
+
+</resources>

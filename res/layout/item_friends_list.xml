@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <RelativeLayout
+        android:id="@+id/rout_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rout_friends_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin_top"
+            android:layout_marginLeft="@dimen/btn_margin_left"
+            android:layout_marginRight="@dimen/btn_margin_right"
+            >
+            <ImageView
+                android:id="@+id/iv_item_head"
+                android:layout_width="46px"
+                android:layout_height="46px"
+                />
+
+            <TextView
+                android:id="@+id/tv_friends_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_24"
+                android:textColor="@color/item_head"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="123"
+                android:layout_toRightOf="@+id/iv_item_head"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/tv_friends_time"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_friends_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_20"
+                android:textColor="@color/gray"
+                android:layout_alignParentRight="true"
+                android:text="10:08"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rout_friends_conent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rout_friends_title"
+            android:layout_marginTop="7px"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="2px"
+            android:background="@color/black_gray"
+            >
+            <ImageView
+                android:id="@+id/iv_friends_picture"
+                android:layout_width="156px"
+                android:layout_height="156px"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/iv_video"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/iv_friends_locationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3px"
+                android:layout_marginLeft="8px"
+                android:layout_marginBottom="3px"
+                />
+
+            <TextView
+                android:id="@+id/tv_friends_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="漕宝路401号/ 今天天气好棒棒哦！"
+                android:textSize="@dimen/textsize_20"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/iv_friends_locationicon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8px"
+                android:layout_marginLeft="8px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rout_friends_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rout_friends_conent"
+            >
+
+            <TextView
+                android:id="@+id/tv_friends_praisenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_18"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                />
+
+            <ImageView
+                android:id="@+id/iv_friends_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/praise"
+                android:layout_toRightOf="@+id/tv_friends_praisenumber"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="8px"
+                android:layout_marginLeft="10px"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:background="@color/line"
+            android:layout_below="@+id/rout_friends_praise"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

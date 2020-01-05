@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black_gray"
+            android:layout_marginTop="4px"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="2px"
+            >
+                <ImageView
+                    android:id="@+id/iv_moodhead"
+                    android:layout_width="46px"
+                    android:layout_height="56px"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin"
+                    android:layout_marginTop="9px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginBottom="9px"
+                    android:layout_marginRight="10px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_moodname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_28"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_moodhead"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_moodtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_24"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_marginRight="@dimen/btn_margin_right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <View
+                    android:id="@+id/view_mood_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line"
+                    android:layout_marginLeft="@dimen/btn_margin_left"
+                    android:layout_marginRight="@dimen/btn_margin_right"
+                    android:layout_below="@id/iv_moodhead"
+                    android:visibility="gone"
+                    />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<resources>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/rightOutAnim</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowSwipeToDismiss">true</item>
+        <item name="android:windowAnimationStyle">@style/rightOutAnim</item>
+    </style>
+
+    <style name="AnimNull" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="AppThemeNoAnim" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowSwipeToDismiss">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimNull</item>
+    </style>
+
+    <style name="AppThemeNoSwipe" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowSwipeToDismiss">false</item>
+        <item name="android:windowAnimationStyle">@style/rightOutAnim</item>
+    </style>
+
+    <!-- dialog样式 -->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <!--显示区域背景是否透明-->
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5-->
+        <item name="android:backgroundDimAmount">1</item>
+        <!--//显示区域以外是否使用黑色半透明背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+	
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!--<style name="AppRightAnim" parent="@android:style/Theme.Black.NoTitleBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowSwipeToDismiss">true</item>
+        <item name="android:windowAnimationStyle">@style/rightOutAnim</item>
+    </style>-->
+
+    <!--activity 进入退出动画-->
+    <style name="rightOutAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="AppRightAnim" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@style/rightOutAnim</item>
+    </style>
+
+
+</resources>

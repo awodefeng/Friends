@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_margin_right">10px</dimen>
+    <dimen name="btn_margin_left">10px</dimen>
+    <dimen name="btn_margin_top">10px</dimen>
+    <dimen name="btn_margin_bottom">10px</dimen>
+    <dimen name="margin">10px</dimen>
+
+    <dimen name="view_margin_bottom">5px</dimen>
+    <dimen name="view_margin_top">5px</dimen>
+    <dimen name="view_margin_top18">18px</dimen>
+    <dimen name="view_margin_right15">15px</dimen>
+
+
+    <!-- screen -->
+    <dimen name="screen_width">240px</dimen>
+    <dimen name="screen_height">240px</dimen>
+
+    <dimen name="textsize_18">18px</dimen>
+    <dimen name="textsize_20">20px</dimen>
+    <dimen name="textsize_24">24px</dimen>
+    <dimen name="textsize_28">28px</dimen>
+    <dimen name="textsize_30">30px</dimen>
+    <dimen name="head_148">148px</dimen>
+
+    <!--Album-->
+
+    <!--Location-->
+
+    <!--mood-->
+
+    <!--text-->
+</resources>
+

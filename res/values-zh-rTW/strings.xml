@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+	<string name="id">values-zh-rTW</string>
+	<string name="app_name" />
+	<string name="recording">請長按錄音</string>
+	<string name="publisfriends">正在發佈朋友圈</string>
+	<string name="no_network">無網路連接</string>
+	<string name="publis_friends">暫無數據，先發個朋友圈吧！</string>
+	<string name="say_something">說點什麼吧</string>
+	<string name="long_press_recording">長按錄音</string>
+	<string name="dont_repeat_praise">請不要重複點贊</string>
+	<string name="main_data_fail">同步消息，請稍等..</string>
+	<string name="main_loadingd_data">載入數據..</string>
+	<string name="loaction_get">請稍等，正在獲取地理位置。</string>
+	<string name="data_error">資料載入失敗，請重新進入</string>
+	<string name="last_data">已經是最後一條資料</string>
+	<string name="frieds_baby">小寶貝</string>
+	<string name="picture">相冊</string>
+	<string name="takepicture">拍照</string>
+</resources>
